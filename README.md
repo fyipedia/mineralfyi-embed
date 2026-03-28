@@ -44,7 +44,7 @@ That's it. The widget fetches data from the MineralFYI API and renders with full
 | `data-mineralfyi` | entity, compare, glossary, guide, search, [tools] | required | Widget type |
 | `data-slug` | e.g. "minerals" | — | Entity slug from the MineralFYI database |
 | `data-theme` | light, dark, sepia, auto | light | Visual theme (`auto` follows OS preference) |
-| `data-style` | modern, technical | modern | Widget design style |
+| `data-styleVariant` | modern, technical | modern | Widget design style |
 | `data-size` | default, compact, large | default | Widget size |
 | `data-placeholder` | any string | "Search Minerals..." | Search box placeholder |
 
@@ -68,10 +68,10 @@ That's it. The widget fetches data from the MineralFYI API and renders with full
 
 ```html
 <!-- Modern (default) — clean lines, rounded corners, accent gradients -->
-<div data-mineralfyi="entity" data-slug="minerals" data-style="modern"></div>
+<div data-mineralfyi="entity" data-slug="minerals" data-styleVariant="modern"></div>
 
 <!-- Technical — monospace type, grid overlays, laboratory aesthetic -->
-<div data-mineralfyi="entity" data-slug="minerals" data-style="technical"></div>
+<div data-mineralfyi="entity" data-slug="minerals" data-styleVariant="technical"></div>
 ```
 
 ## Web Components (Custom Elements)
