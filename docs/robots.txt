@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# MineralFYI Embed Widget
+# Main site: https://mineralfyi.com
+# Widget docs: https://widget.mineralfyi.com
+# npm: https://www.npmjs.com/package/mineralfyi-embed
