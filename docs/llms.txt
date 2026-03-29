@@ -1,21 +1,51 @@
 # MineralFYI Embed Widget
 
-> Embeddable MineralFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> 6,215 minerals, crystal systems. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/mineralfyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/mineralfyi-embed@1/dist/embed.min.js"></script>
+<div data-mineralfyi="crystal-badge" data-slug="example"></div>
+```
+
+## Available Widget Types (7)
+
+- entity: `data-mineralfyi="entity"`
+- glossary: `data-mineralfyi="glossary"`
+- guide: `data-mineralfyi="guide"`
+- compare: `data-mineralfyi="compare"`
+- search: `data-mineralfyi="search"`
+- crystal-badge (interactive): `data-mineralfyi="crystal-badge"`
+- mineral-formula (interactive): `data-mineralfyi="mineral-formula"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-mineralfyi="crystal-badge" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/mineralfyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://mineralfyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://mineralfyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://mineralfyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://mineralfyi.com
 - Widget docs: https://widget.mineralfyi.com
-- npm: https://www.npmjs.com/package/mineralfyi-embed
+- API documentation: https://mineralfyi.com/developers/
+- npm package: https://www.npmjs.com/package/mineralfyi-embed
 - GitHub: https://github.com/fyipedia/mineralfyi-embed
-- API: https://mineralfyi.com/developers/
 
-## Science FYI Widget Family
+## Science FYI Widget Network
 
 - [ChemFYI Widget](https://widget.chemfyi.com)
 - [AlloyFYI Widget](https://widget.alloyfyi.com)
